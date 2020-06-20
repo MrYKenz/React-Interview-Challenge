@@ -18,7 +18,7 @@
 ### Changes or Improvements
 - Create proper drop area for holdings when requirements for it are known and stop items from disappearing when dragged off.
 - Search options/filters to change matches table.
-- Replace sell out and top up console logs with functionality to highlight items (or create modals).
+- Replace sell out and top up alerts with functionality to highlight items (or create modals).
 - Change avatars to company logos or icons (e.g. Apple and Vodaphone) if wanted - are there logos for these bonds? 
     - can store these in a folder and add urls to the json data
 - Could use Typescript if preferred & time frame of project permits or include proptypes & tests (test framework - e.g. Jest).

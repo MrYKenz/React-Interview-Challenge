@@ -6,10 +6,10 @@ import Avatar from '@material-ui/core/Avatar';
 
 function Cards({data, dragStart, dragOver}) {
     const sellOut = () => {
-        console.log("sell out"); // sellout functionality
+        alert("SELL OUT"); // replace with sellout functionality
     }
     const topUp = () => {
-        console.log("top up"); // topup functionality
+        alert("TOP UP"); // replace with topup functionality
     }
     return (
         <div>
