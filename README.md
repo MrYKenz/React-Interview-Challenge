@@ -11,6 +11,7 @@
 - Options/Filters underneath search bar but can add them to hamburger menu button:
     - Maturity filter slider is set to go up in increments of 10 - this can be changed.
 - Table for matches (blokets) based on value in search bar using filter() function.
+- If certainty of execution is > 3 change font to blue and add hot next to number.
 
 ### Changes or Improvements
 - Create proper drop area for holdings when requirements for it are known and stop items from disappearing when dragged off.

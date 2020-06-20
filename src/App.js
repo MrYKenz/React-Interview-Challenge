@@ -18,7 +18,7 @@ function App() {
     <div className="App">
 
       <header className="App-header">
-        Main Page
+        BLOKX
         <span>
           { user ? `Logged in as: ${user}` : 'Logged Out'}
         </span> 

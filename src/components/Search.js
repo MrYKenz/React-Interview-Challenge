@@ -74,7 +74,7 @@ function Search() {
         
         <Grid item xs={3}>
             <FormControl style={{ width: '80%' }}>
-            <InputLabel>Industry Type</InputLabel>
+            <InputLabel>Industry</InputLabel>
             <Select
             native
             value={industry}
@@ -95,7 +95,7 @@ function Search() {
         </Grid>
 
         <Grid item xs={3}>
-            <FormControl style={{ width: '80%' }}>
+            <FormControl style={{ width: '70%' }}>
             <InputLabel>Rating</InputLabel>
             <Select
             native
@@ -121,7 +121,8 @@ function Search() {
     
         <Grid item xs={3}>
             <Typography id="discrete-slider-custom" 
-            gutterBottom style={{color: '#777'}}>
+            gutterBottom style={{color: '#777', 
+            fontSize: '12px'}}>
                 Maturity (0-100)
             </Typography>
             <Slider
@@ -135,7 +136,8 @@ function Search() {
 
         <Grid item xs={3}>
             <Typography id="discrete-slider-small-steps" 
-            gutterBottom style={{color: '#777'}}>
+            gutterBottom style={{color: '#777', 
+            fontSize: '12px'}}>
                 Yield (0-6)
             </Typography>
             <Slider
