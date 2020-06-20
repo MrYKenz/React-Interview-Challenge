@@ -7,7 +7,7 @@ import Matches from './components/Matches';
 import Grid from '@material-ui/core/Grid';
 // mock API data
 import holdings from './holdings.json' // replicates fetched API data
-import blockets from './blockets.json' // replicates fetched API data
+import blokets from './blokets.json' // replicates fetched API data
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
 
           <Grid item xs={8}>
             <Search />
-            <Matches data={blockets} />
+            <Matches data={blokets} />
           </Grid>
       </Grid>
 
