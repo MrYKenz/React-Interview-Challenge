@@ -1,0 +1,8 @@
+[
+    {"bond": "VOD 1 20", "type": "SS", "certainty": 1},
+    {"bond": "BACR 5.5 26", "type": "BS", "certainty": 5},
+    {"bond": "TITM 5.5 55", "type": "PM", "certainty": 4},
+    {"bond": "AAPL 2.75 25", "type": "PM", "certainty": 5},
+    {"bond": "VID 5.9 32", "type": "BS", "certainty": 3},
+    {"bond": "ACCOR 2.375 33", "type": "SS", "certainty": 1}
+]

@@ -1,0 +1,8 @@
+[
+    {"bond": "VOD 1 20", "size": 10000000, "price": 101},
+    {"bond": "BACR 5.5 26", "size": 5000000, "price": 99},
+    {"bond": "TITM 5.5 55", "size": 15000000, "price": 102},
+    {"bond": "AAPL 2.75 25", "size": 20000000, "price": 101.125},
+    {"bond": "VID 5.9 32", "size": 25000000, "price": 100},
+    {"bond": "ACCOR 2.375 33", "size": 70000000, "price": 100}
+]
