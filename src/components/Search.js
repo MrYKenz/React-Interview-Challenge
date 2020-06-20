@@ -31,7 +31,7 @@ const yieldMarks = [
     { value: 5 }, { value: 6, label: '6'}
 ];
 
-function Search() {
+function Search({onChange}) {
   const classes = useStyles();
   const [industry, setIndustry] = useState('');
   const [rating, setRating] = useState('');
@@ -62,6 +62,7 @@ function Search() {
         className={classes.input}
         placeholder="Search for blockets"
         inputProps={{ 'aria-label': 'search for blockets' }}
+        onChange={onChange}
       />
       <IconButton type="submit" className={classes.iconButton} 
       aria-label="search">

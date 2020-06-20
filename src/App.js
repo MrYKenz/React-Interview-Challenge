@@ -3,6 +3,7 @@ import './App.css';
 import Display from './components/Display';
 import Search from './components/Search';
 import Matches from './components/Matches';
+import logo from './logo.jpg'; // logo from website
 // material ui imports
 import Grid from '@material-ui/core/Grid';
 // mock API data
@@ -13,12 +14,22 @@ import blokets from './blokets.json' // replicates fetched API data
 function App() {
    // replicates user object for authentication
   const [user, setUser] = useState('test@example.com');
+  const [matches, setMatches] = useState(blokets);
+
+  const onChange = event => {
+    const query = event.target.value;
+		if (query) {
+      setMatches(matches.filter(item => item.name.includes(query.toUpperCase())));
+		} else {
+			setMatches(blokets)
+    }
+  }
 
   return (
     <div className="App">
 
       <header className="App-header">
-        BLOKX
+        <img src={logo} alt="BLOKX Logo" />
         <span>
           { user ? `Logged in as: ${user}` : 'Logged Out'}
         </span> 
@@ -33,8 +44,8 @@ function App() {
         </Grid>
 
           <Grid item xs={8}>
-            <Search />
-            <Matches data={blokets} />
+            <Search onChange={onChange} />
+            <Matches data={matches} />
           </Grid>
       </Grid>
 
