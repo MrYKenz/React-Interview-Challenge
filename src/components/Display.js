@@ -26,12 +26,13 @@ function Display({data}) {
     return (
         <div onDragOver={drag} onDrop={drop}>
             <h3 style={{textAlign: 'left', paddingLeft: '1rem', 
-            color: '#444'}}>
+            color: '#444', marginBottom: 0}}>
                 Holdings Information
             </h3>
             <p style={{color: '#888', fontSize: '14px',
             borderStyle: 'dashed', borderWidth: '1px',
-            padding: '3px', marginLeft: '0.4rem'}}>
+            padding: '10px', marginLeft: '0.4rem', 
+            marginTop: '10px'}}>
                 Drag Items Here
             </p>
             <Cards data={data} dragStart={dragStart} 

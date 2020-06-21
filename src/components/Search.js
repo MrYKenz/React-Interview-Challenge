@@ -51,7 +51,7 @@ function Search({onChange}) {
   return (
     <>
     <h3 style={{textAlign: 'left', paddingLeft: '4rem', 
-    color: '#444'}}>
+    color: '#444', marginBottom: '8px'}}>
         Search
     </h3>
     <Paper component="form" className={classes.root}>
