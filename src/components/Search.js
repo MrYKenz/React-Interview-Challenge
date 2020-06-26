@@ -33,20 +33,16 @@ const yieldMarks = [
 
 function Search({onChange}) {
   const classes = useStyles();
+  const [ShowFilters, setShowFilters] = useState(false);
   const [industry, setIndustry] = useState('');
   const [rating, setRating] = useState('');
 
-  const valuetext = (value) => {
-    return value;
-  }
-
-  const changeIndustry = (event) => {
-    setIndustry(event.target.value);
-  };
-
-  const changeRating = (event) => {
-    setRating(event.target.value);
-  };
+  const valuetext = value => value;
+  const filtersClick = () => !ShowFilters ? setShowFilters(true) 
+  : setShowFilters(false);
+  const searchClick = event => event.preventDefault();
+  const changeIndustry = event => setIndustry(event.target.value);
+  const changeRating = event => setRating(event.target.value);
 
   return (
     <>
@@ -55,7 +51,8 @@ function Search({onChange}) {
         Search
     </h3>
     <Paper component="form" className={classes.root}>
-      <IconButton className={classes.iconButton} aria-label="menu">
+      <IconButton  onClick={filtersClick} 
+      className={classes.iconButton} aria-label="menu">
         <MenuIcon />
       </IconButton>
       <InputBase
@@ -65,12 +62,12 @@ function Search({onChange}) {
         onChange={onChange}
       />
       <IconButton type="submit" className={classes.iconButton} 
-      aria-label="search">
+      aria-label="search" onClick={searchClick}>
         <SearchIcon />
       </IconButton>
     </Paper>
 
-    <Grid container spacing={0} 
+    { ShowFilters && <Grid container spacing={0} 
     style={{paddingLeft: '2rem', marginTop: '1.2rem'}}>
         
         <Grid item xs={3}>
@@ -150,7 +147,7 @@ function Search({onChange}) {
             style={{width: '60%'}}
             />
         </Grid>
-    </Grid>
+    </Grid>}
     </>
   );
 }
