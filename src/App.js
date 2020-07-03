@@ -3,25 +3,24 @@ import './App.css';
 import Display from './components/Display';
 import Search from './components/Search';
 import Matches from './components/Matches';
-import logo from './logo.jpg'; // logo from website
 // material ui imports
 import Grid from '@material-ui/core/Grid';
 // mock API data
 import holdings from './holdings.json' // replicates fetched API data
-import blokets from './blokets.json' // replicates fetched API data
+import notifications from './matches.json' // replicates fetched API data
 
 
 function App() {
    // replicates user object for authentication
-  const [user, setUser] = useState('test@example.com');
-  const [matches, setMatches] = useState(blokets);
+  const [user, setUser] = useState('hello@example.com');
+  const [matches, setMatches] = useState(notifications);
 
   const onChange = event => {
     const query = event.target.value;
 		if (query) {
       setMatches(matches.filter(item => item.name.includes(query.toUpperCase())));
 		} else {
-			setMatches(blokets)
+			setMatches(notifications)
     }
   }
 
@@ -29,7 +28,7 @@ function App() {
     <div className="App">
 
       <header className="App-header">
-        <img src={logo} alt="BLOKX Logo" />
+        Trading Platform
         <span>
           { user ? `Logged in as: ${user}` : 'Logged Out'}
         </span> 

@@ -57,8 +57,8 @@ function Search({onChange}) {
       </IconButton>
       <InputBase
         className={classes.input}
-        placeholder="Search for blockets"
-        inputProps={{ 'aria-label': 'search for blockets' }}
+        placeholder="Search for bonds"
+        inputProps={{ 'aria-label': 'search for bonds' }}
         onChange={onChange}
       />
       <IconButton type="submit" className={classes.iconButton} 
